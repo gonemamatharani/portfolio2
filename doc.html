@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <metav name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header">
+    <video autoplay loop muted plays-inline class="back-vedio">
+      <source src="https://media.istockphoto.com/id/1315411378/video/businessman-with-web-design-hologram-concept.mp4?s=mp4-640x640-is&k=20&c=M2QFPXagFGLyt8AwIy8fkmtSBaHCKAgUNrXGExOwDqI="  >
+    </video>
+    <div class="container">
+        <nav>
+            <img src="https://img.freepik.com/free-vector/branding-identity-corporate-vector-logo-m-design_460848-10168.jpg?w=740&t=st=1691038461~exp=1691039061~hmac=b52fa00464df5c3b254aa4745840c69dae28bf3e5c34c799d1827aafa94fdea3" class="logo">
+            <ul>
+                <li><a href="#about">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text ">
+          <p>UI/UX Designer</p>
+          <h1>Hi,I'm <span>Mamatha Rani Gone</span> </h1>
+        </div>
+    </div>
+  </div>  
+<!-- --------------about---------------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img class="about-img" src="https://img.freepik.com/free-vector/hand-drawn-flat-design-devops-illustration_23-2149375793.jpg?w=740&t=st=16910" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>To be associated with an enterprise where my potential, efforts, inter personal skills and knowledge in the
+            adopted field will lead to a responsible position offering a high level of challenge and the opportunity for
+            continued career growth and mutual benefit.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX </span><br> web pages</li>
+                <li><span>Dynamic Web Design </span> <br> Dynamic Web pages development</li>
+                <li><span>Responsive Web Design </span> <br> Responsive Web pages development</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2022 - current </span><br> fullstack development cource</li>
+                <li><span>2019 - 2022</span> <br>Worked in a Hardware Company</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2016 - 2019 </span><br>B.TECH specilization In ECE</li>
+                <li><span>2013 - 2016 </span> <br> DIPLOMA specilization In ECE</li>
+                <li><span>2012 - 2013 </span> <br> SSC</li>
+              </ul>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </div> 
+
+
+  <script>
+
+      var tablinks=document.getElementsByClassName('tab-links')
+      var tabcontents=document.getElementsByClassName('tab-contents')
+
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove('active-link');
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove('active-tab')
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab')
+      }
+
+  </script>
+
+
+</body>
+
+
+</html>
