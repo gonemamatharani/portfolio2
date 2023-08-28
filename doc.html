@@ -5,35 +5,43 @@
     <metav name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/060c595db5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div id="header">
-    <video autoplay loop muted plays-inline class="back-vedio">
-      <source src="https://media.istockphoto.com/id/1315411378/video/businessman-with-web-design-hologram-concept.mp4?s=mp4-640x640-is&k=20&c=M2QFPXagFGLyt8AwIy8fkmtSBaHCKAgUNrXGExOwDqI="  >
-    </video>
+  <section id="header">
     <div class="container">
-        <nav>
-            <img src="https://img.freepik.com/free-vector/branding-identity-corporate-vector-logo-m-design_460848-10168.jpg?w=740&t=st=1691038461~exp=1691039061~hmac=b52fa00464df5c3b254aa4745840c69dae28bf3e5c34c799d1827aafa94fdea3" class="logo">
-            <ul>
-                <li><a href="#about">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-text ">
-          <p>UI/UX Designer</p>
-          <h1>Hi,I'm <span>Mamatha Rani Gone</span> </h1>
+      <nav id="navbar">
+        <h1 class="logo"><span>M</span>amatha's <span>P</span>ortfolio</h1>
+        <ul id="link">
+              <li><a style="--i:1" href="#header">Home</a></li>
+              <li><a style="--i:2" href="#about">About</a></li>
+              <li><a style="--i:3" href="#services">Services</a></li>
+              <li><a style="--i:4" href="#portfolio">Portfolio</a></li>
+              <li><a style="--i:5" href="#contact">Contact</a></li>
+              <i class="menu fa-sharp fa-solid fa-xmark"></i>
+          </ul>
+          <i class="menu fa-solid fa-bars"></i>
+      </nav>
+      <div class="header-text ">
+        <h1>Hi, I'm <span> Mamatha</span> </h1>
+        <h1>and I'm a Passionate</h1>
+        <span id="element"></span>
+        <div class="button">
+         <a href="#contact"> <button class="btn3">Contact Me</button></a>
+         <a href="#contact"> <button class="btn4">My Work</button></a>
+
         </div>
-    </div>
-  </div>  
+      </div>
+  </div>
+    
+</section>
+  
 <!-- --------------about---------------- -->
-  <div id="about">
+  <section id="about">
     <div class="container">
       <div class="row">
         <div class="about-col-1">
-          <img class="about-img" src="https://img.freepik.com/free-vector/hand-drawn-flat-design-devops-illustration_23-2149375793.jpg?w=740&t=st=16910" alt="">
+          <img class="about-img" src="https://cdn.dribbble.com/users/1047273/screenshots/6558495/02-pins-animated.gif" alt="">
         </div>
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
@@ -48,9 +56,9 @@
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
-                <li><span>UI/UX </span><br> web pages</li>
-                <li><span>Dynamic Web Design </span> <br> Dynamic Web pages development</li>
-                <li><span>Responsive Web Design </span> <br> Responsive Web pages development</li>
+                <li><span>Frontend </span><br> HTML, CSS, JAVASCRIPT, Bootstrap, React Js</li>
+                <li><span>Backend </span> <br> Python, Express, Node JS</li>
+                <li><span>Database </span> <br> Express JS</li>
               </ul>
             </div>
 
@@ -72,9 +80,123 @@
 
       </div>
     </div>
-  </div> 
+  </section> 
 
 
+<!--------------------services---------------------- -->
+
+<section id="services">
+  <div class="container">
+    <h1 class="sub-title2">My Services</h1>
+  <div class="service-list">
+      <div>
+        <i class="fa-sharp fa-solid fa-code"></i>
+        <h2>Dynamic Web Developement</h2>
+        <p>Server-side Scripting web page that changes when it's loaded or visited, or based on what's submitted to it, uses server-side scripting</p>
+          <a href="">Learn More<i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-hashtag"></i>
+        <h2>Responsive Web Page Design<h1>
+        <p>Responsive web design is about creating web pages that look good on all devices.A responsive web design will automatically adjust for different screen sizes and viewports.</p>
+        <a href="">Learn More<i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-crop-simple"></i>        <h2>UI/UX Web Design</h2>
+        <p>A specialization of web design that deals with the controls people use to interact with a website or app, including button displays and gesture controls.</p>
+        <a href="">Learn More<i class="fa-sharp fa-solid fa-arrow-right"></i></a>
+      </div>
+  </div>
+  </div>
+</section>
+
+<!-- ------------------portfolio------------------------ -->
+
+<section id="portfolio">
+  <div class="container">
+    <h1 class="sub-title2">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="/images/food.jpg" alt="">
+        <div class="layer">
+          <h3>Food Munch</h3>
+        <p>A fully responsive website that offers a comprehensive list of food items and detailed information about each
+          item.Designed to provide the best user experience with HTML structure elements and Bootstrap components.
+          Implemented product videos to give customers a clear view of the food items.</p>
+          <a href="https://foodmunchmamu.ccbp.tech/ "  target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square fa-beat"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="https://imageio.forbes.com/specials-images/dam/imageserve/1092571024/960x0.jpg?format=jpg&width=960" alt="">
+        <div class="layer">
+          <h3>Todos Application</h3>
+            <p>Developed persistent todo application with CRUD operations to track list of tasks.Displayed list of todos with HTML list elements, styled todo list using CSS, Bootstrap.
+              Implemented todo crud operations by using JavaScript event listeners and updated UI dynamically by using JavaScript DOM operations.</p>
+              <a href="https://mamathatodoweb.ccbp.tech/" target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square fa-beat"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="https://i0.wp.com/bloomingtrenz.com/wp-content/uploads/2018/03/Deal-Post-Banner.jpg?w=1540&ssl=1" alt="">
+        <div class="layer">
+            <div class="layer">
+              <h3>Nxt Trendz</h3>
+                <p>Developed persistent todo application with CRUD operations to track list of tasks.Displayed list of todos with HTML list elements, styled todo list using CSS, Bootstrap.
+                  Implemented todo crud operations by using JavaScript event listeners and updated UI dynamically by using JavaScript DOM operations.</p>
+                  <a href="https://nxttrends13.ccbp.tech/login"  target="_blank"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square fa-beat"></i></a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn">See More</button>
+  </div>
+
+</section>
+
+<!-- ------------------contact-------------------------- -->
+
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="'sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>gonemamatha08@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i>********07</p>
+        <div class="social-icons">
+          <a href="" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+          <a href="https://github.com/gonemamatharani" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/mamatharanigone/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="images/my-cv.pdf" class="btn btn2" download>Download CV</a>
+      </div>
+      <div class="contact-right">
+          <form >
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="subject" placeholder="Subject" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message"  rows="5" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2 " onclick="sendEmail();" onclick="reset()">Send</button>
+          </form>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © Mamatha Rani<i class="fa-sharp fa-solid fa-heart"></i></p>
+  </div>
+</section>
+
+<!-- ---------------script--------------------------- -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed('#element', {
+    strings: ['Frontend Developer', 'Backend Developer', 'Fullstack Developer'],
+    typeSpeed: 50,
+    delay: 5,
+  });
+</script>
   <script>
 
       var tablinks=document.getElementsByClassName('tab-links')
@@ -92,8 +214,65 @@
       }
 
   </script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<!-- --------------------mail-------------------- -->
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
 
+<script>
+ function sendEmail(){
+  let name=document.getElementById('name').value;
+  let subject=document.getElementById('subject').value;
+  let email=document.getElementById('email').value;
+  let message=document.getElementById('message').value;
 
+  let body="Name: "+name+"<br/> Email: "+email+"<br/> Subject: "+ subject +"<br/> message: "+ message;
+  Email.send({
+    SecureToken :"c10f389c-9491-4466-b4e5-1f910aaba3d7",
+    To : 'mamathagone5@gmail.com',
+    From : "mamathagone5@gmail.com",
+    Subject : subject,
+    Body : body
+}).then(
+  message => alert("Mail Send Successfully...")
+);
+function reset(){
+  document.getElementById('name').value='';
+}
+
+ }
+
+</script>
+
+<!-- ---------scroll -->
+<script type="text/JavaScript">
+  window.addEventListener("scroll",function(){
+    var nav=document.querySelector('nav');
+    nav.classList.toggle('sticky',window.scrollY>0);
+
+  })
+  </script>
+
+<!-- activetab-------------- -->
+<script>
+ const sections=document.getElementById('section');
+ window.onscroll=()=>{
+  sections.forEach(sec=>{
+    let top=window.scrollY;
+    let offset=window.offsetTop;
+    let height=window.offsetHeight;
+    let links=document.getElementById('link');
+
+    console.log(sections)
+    if (top>=offset && top < offset + height){
+      links.classList.add('active-menu');
+    }else{
+      links .classList.remove('active-menu');
+    }
+  })
+ }
+</script>
 </body>
 
 
